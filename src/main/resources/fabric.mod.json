@@ -1,31 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "myfirstmod",
+	"id": "the8086mc",
 	"version": "${version}",
-	"name": "MyFirstMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "8086mc",
+	"description": "Real 8086-like computers in Minecraft",
 	"authors": [
-		"Me!"
+		"GIKExe",
+		"exploit-root"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/GIKExe/The-8086mc-Project",
+		"sources": "https://github.com/GIKExe/The-8086mc-Project"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/myfirstmod/icon.png",
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/the8086mc/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"ru.gikexe.myfirstmod.MyFirstMod"
+			"ru.gikexe.the8086mc.The8086mc"
 		],
 		"client": [
-			"ru.gikexe.myfirstmod.MyFirstModClient"
+			"ru.gikexe.the8086mc.The8086mcClient"
 		]
 	},
 	"mixins": [
-		"myfirstmod.mixins.json",
+		"the8086mc.mixins.json",
 		{
-			"config": "myfirstmod.client.mixins.json",
+			"config": "the8086mc.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -34,8 +35,5 @@
 		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

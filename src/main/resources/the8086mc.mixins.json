@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "ru.gikexe.myfirstmod.mixin",
+	"package": "ru.gikexe.the8086mc.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

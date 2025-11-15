@@ -1,4 +1,4 @@
-package ru.gikexe.myfirstmod.mixin.client;
+package ru.gikexe.the8086mc.mixin.client;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
