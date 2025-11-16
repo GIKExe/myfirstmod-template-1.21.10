@@ -1,6 +1,11 @@
 package ru.gikexe.the8086mc;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import ru.gikexe.the8086mc.Block.ModBlocks;
 import ru.gikexe.the8086mc.Item.ModItems;
 
@@ -15,5 +20,17 @@ public class The8086mc implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+	}
+
+	public static ResourceLocation getLocation(String name) {
+		return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+	}
+
+	public static ResourceKey<Item> getItemKey(String name) {
+		return ResourceKey.create(Registries.ITEM, getLocation(name));
+	}
+
+	public static ResourceKey<Block> getBlockKey(String name) {
+		return ResourceKey.create(Registries.BLOCK, getLocation(name));
 	}
 }
