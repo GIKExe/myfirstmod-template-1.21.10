@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:blasting",
+	"ingredient": "the8086mc:carbon_quartz_powder",
+	"result": {
+		"id": "the8086mc:metallurgical_silicon"
+	},
+	"experience": 0.1,
+	"cookingtime": 200
+}
