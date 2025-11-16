@@ -27,7 +27,12 @@ public class ModItems {
 	public static final Item COPPER_WIRE = registerItem("copper_wire");
 	public static final Item COPPER_CONTACT = registerItem("copper_contact");
 	public static final Item IRON_PLATE = registerItem("iron_plate");
-
+	//
+	//
+	public static final Item ELECTRONIC_SILICON_INGOT = registerItem("electronic_silicon_ingot");
+	public static final Item BARE_WAFER = registerItem("bare_wafer");
+	public static final Item PROCESSED_WAFER = registerItem("processed_wafer");
+	public static final Item CHIP = registerItem("chip");
 
 	private static Properties newProperties() {
 		return new Properties();

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" # ",
+		"WGL",
+		" I "
+	],
+	"key": {
+		"#": "the8086mc:copper_wire",
+		"W": "minecraft:water_bucket",
+		"G": "the8086mc:bare_wafer",
+		"L": "minecraft:lava_bucket",
+		"I": "the8086mc:iron_plate"
+	},
+	"result": {
+		"id": "the8086mc:processed_wafer",
+		"count": 1
+	}
+}

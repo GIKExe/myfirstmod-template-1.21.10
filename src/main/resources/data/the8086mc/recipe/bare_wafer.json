@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"the8086mc:iron_hammer",
+		"the8086mc:electronic_silicon_ingot"
+	],
+	"result": {
+		"id": "the8086mc:bare_wafer",
+		"count": 1
+	}
+}

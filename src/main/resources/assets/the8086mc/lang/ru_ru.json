@@ -7,5 +7,9 @@
 	"item.the8086mc.copper_plate": "Медная пластина",
 	"item.the8086mc.copper_wire": "Медный провод",
 	"item.the8086mc.copper_contact": "Медный контакт",
-	"item.the8086mc.iron_plate": "Железная пластина"
+	"item.the8086mc.iron_plate": "Железная пластина",
+	"item.the8086mc.electronic_silicon_ingot": "Слиток Электронного Кремня",
+	"item.the8086mc.bare_wafer": "Кремниевая пластина",
+	"item.the8086mc.processed_wafer": "Обработанная Кремниевая пластина",
+	"item.the8086mc.chip": "Процессор"
 }

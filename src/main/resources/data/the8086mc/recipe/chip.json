@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"cIc",
+		"cGc",
+		"cIc"
+	],
+	"key": {
+		"c": "the8086mc:copper_contact",
+		"I": "the8086mc:iron_plate",
+		"G": "the8086mc:processed_wafer"
+	},
+	"result": {
+		"id": "the8086mc:chip",
+		"count": 1
+	}
+}

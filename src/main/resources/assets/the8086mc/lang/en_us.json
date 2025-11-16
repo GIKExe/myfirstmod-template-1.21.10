@@ -7,5 +7,9 @@
 	"item.the8086mc.copper_plate": "Copper Plate",
 	"item.the8086mc.copper_wire": "Copper Wire",
 	"item.the8086mc.copper_contact": "Copper Contact",
-	"item.the8086mc.iron_plate": "Iron Plate"
+	"item.the8086mc.iron_plate": "Iron Plate",
+	"item.the8086mc.electronic_silicon_ingot": "Electronic Silicon Ingot",
+	"item.the8086mc.bare_wafer": "Bare Wafer",
+	"item.the8086mc.processed_wafer": "Processed Wafer",
+	"item.the8086mc.chip": "Chip"
 }
