@@ -2,8 +2,8 @@ package ru.gikexe.the8086mc.components;
 
 public class Processor {
 	private Register ax, bx, cx, dx;
-	private RegisterL al, bl, cl, dl;
-	private RegisterH ah, bh, ch, dh;
+	private Register al, bl, cl, dl;
+	private Register ah, bh, ch, dh;
 	private Register sp, bp;
 	private Register si, di;
 	private Register es, cs, ss, ds;
@@ -26,33 +26,33 @@ public class Processor {
 	}
 
 	private void init() {
-		ax = new Register();
-		al = new RegisterL(ax);
-		ah = new RegisterH(ax);
+		ax = new RegisterFull();
+		al = new RegisterLow(ax);
+		ah = new RegisterHigh(ax);
 
-		bx = new Register();
-		bl = new RegisterL(bx);
-		bh = new RegisterH(bx);
+		bx = new RegisterFull();
+		bl = new RegisterLow(bx);
+		bh = new RegisterHigh(bx);
 
-		cx = new Register();
-		cl = new RegisterL(cx);
-		ch = new RegisterH(cx);
+		cx = new RegisterFull();
+		cl = new RegisterLow(cx);
+		ch = new RegisterHigh(cx);
 
-		dx = new Register();
-		dl = new RegisterL(dx);
-		dh = new RegisterH(dx);
+		dx = new RegisterFull();
+		dl = new RegisterLow(dx);
+		dh = new RegisterHigh(dx);
 
-		sp = new Register();
-		bp = new Register();
-		ip = new Register();
+		sp = new RegisterFull();
+		bp = new RegisterFull();
+		ip = new RegisterFull();
 
-		si = new Register();
-		di = new Register();
+		si = new RegisterFull();
+		di = new RegisterFull();
 
-		es = new Register();
-		cs = new Register();
-		ss = new Register();
-		ds = new Register();
+		es = new RegisterFull();
+		cs = new RegisterFull();
+		ss = new RegisterFull();
+		ds = new RegisterFull();
 	}
 
 	public void tick() {
@@ -64,17 +64,17 @@ public class Processor {
 	}
 
 	private Register selectRegister(char number) {
-		switch (number) {
-			case 0: return al;
-			case 1: return cl;
-			case 2: return dl;
-			case 3: return bl;
-			case 4: return ah;
-			case 5: return ch;
-			case 6: return dh;
-			case 7: return bh;
-			default: return null;
-		}
+        return switch (number) {
+            case 0 -> al;
+            case 1 -> cl;
+            case 2 -> dl;
+            case 3 -> bl;
+            case 4 -> ah;
+            case 5 -> ch;
+            case 6 -> dh;
+            case 7 -> bh;
+            default -> null;
+        };
 	}
 
 	private byte readNextOpcode() {

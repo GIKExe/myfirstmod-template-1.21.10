@@ -11,7 +11,7 @@ import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.level.block.Block;
 import ru.gikexe.the8086mc.The8086mc;
-import ru.gikexe.the8086mc.Block.ModBlocks;
+import ru.gikexe.the8086mc.block.ModBlocks;
 
 public class ModItems {
 	public static final Item CARBON_QUARTZ_POWDER = registerItem("carbon_quartz_powder");

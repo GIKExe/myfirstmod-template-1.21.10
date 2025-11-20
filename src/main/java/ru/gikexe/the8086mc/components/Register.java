@@ -1,29 +1,13 @@
 package ru.gikexe.the8086mc.components;
 
-public class Register {
-	protected short value;
+public interface Register {
+	short getValue();
+	void setValue(short value);
 
-	public Register(short value) {
-		setValue(value);
+	default void inc() {
+		setValue((short) (getValue() + 1));
 	}
-
-	public Register() {
-		setValue((byte)0);
-	}
-
-	public short getValue() {
-		return value;
-	}
-
-	public void setValue(short value) {
-		this.value = value;
-	}
-
-	public void inc() {
-		value++;
-	}
-
-	public void dec() {
-		value--;
+	default void dec() {
+		setValue((short) (getValue() - 1));
 	}
 }

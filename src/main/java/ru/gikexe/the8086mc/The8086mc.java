@@ -6,9 +6,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import ru.gikexe.the8086mc.Block.ModBlocks;
+import ru.gikexe.the8086mc.block.ModBlocks;
 import ru.gikexe.the8086mc.Item.ModItems;
-import ru.gikexe.the8086mc.components.Processor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
