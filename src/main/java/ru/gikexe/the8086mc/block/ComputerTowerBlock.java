@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.Vec3;
 import ru.gikexe.the8086mc.misc.IgnoreWaterExplosionDamageCalculator;
 
 public class ComputerTowerBlock extends Block implements SimpleWaterloggedBlock {
@@ -42,25 +43,25 @@ public class ComputerTowerBlock extends Block implements SimpleWaterloggedBlock 
 
 	@Override
 	public boolean placeLiquid(LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, FluidState fluidState) {
-		if (fluidState.getType() == Fluids.WATER) explodeThis((Level)levelAccessor, blockPos);
+		if (fluidState.getType() == Fluids.WATER) explodeThis((Level)levelAccessor, blockPos.getCenter());
 		return false;
 	}
 
 	@Override
 	protected void onPlace(BlockState blockState, Level level, BlockPos blockPos, BlockState blockState2, boolean bl) {
 		super.onPlace(blockState, level, blockPos, blockState2, bl);
-		if (level.getFluidState(blockPos).getType() == Fluids.WATER) explodeThis(level, blockPos);
+		if (level.getFluidState(blockPos).getType() == Fluids.WATER) explodeThis(level, blockPos.getCenter());
 	}
 
-	private void explodeThis(Level level, BlockPos blockPos) {
+	private void explodeThis(Level level, Vec3 blockPos) {
 		level.explode(
 			null,
 			Explosion.getDefaultDamageSource(level, null),
 			new IgnoreWaterExplosionDamageCalculator(),
-			blockPos.getX(),
-			blockPos.getY(),
-			blockPos.getZ(),
-			4.0F,
+			blockPos.x(),
+			blockPos.y(),
+			blockPos.z(),
+			6.0F,
 			false,
 			Level.ExplosionInteraction.TNT
 		);
