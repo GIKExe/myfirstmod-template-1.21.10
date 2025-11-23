@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "the8086mc:block/computer_tower"
+		},
+		"facing=east": {
+			"model": "the8086mc:block/computer_tower",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "the8086mc:block/computer_tower",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "the8086mc:block/computer_tower",
+			"y": 270
+		}
+	}
+}

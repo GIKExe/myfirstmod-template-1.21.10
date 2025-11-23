@@ -11,5 +11,6 @@
 	"item.the8086mc.electronic_silicon_ingot": "Слиток Электронного Кремня",
 	"item.the8086mc.bare_wafer": "Кремниевая пластина",
 	"item.the8086mc.processed_wafer": "Обработанная Кремниевая пластина",
-	"item.the8086mc.chip": "Процессор"
+	"item.the8086mc.chip": "Процессор",
+	"item.the8086mc.computer_tower": "Системный Блок"
 }

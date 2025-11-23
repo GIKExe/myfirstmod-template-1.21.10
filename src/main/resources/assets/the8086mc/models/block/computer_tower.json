@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"top":    "the8086mc:block/computer_tower/top",
+		"bottom": "the8086mc:block/computer_tower/bottom",
+		"north":  "the8086mc:block/computer_tower/front",
+		"east":   "the8086mc:block/computer_tower/left",
+		"west":   "the8086mc:block/computer_tower/right",
+		"south":  "the8086mc:block/computer_tower/back"
+	}
+}

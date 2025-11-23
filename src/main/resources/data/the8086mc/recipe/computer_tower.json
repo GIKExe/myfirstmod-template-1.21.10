@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"#S#",
+		"SXS",
+		"#S#"
+	],
+	"key": {
+		"#": "the8086mc:iron_plate",
+		"S": "the8086mc:copper_wire",
+		"X": "the8086mc:chip"
+	},
+	"result": {
+		"id": "the8086mc:computer_tower"
+	}
+}

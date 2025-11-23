@@ -33,6 +33,8 @@ public class ModItems {
 	public static final Item BARE_WAFER = registerItem("bare_wafer");
 	public static final Item PROCESSED_WAFER = registerItem("processed_wafer");
 	public static final Item CHIP = registerItem("chip");
+	//
+	public static final Item COMPUTER_TOWER = registerItem("computer_tower", ModBlocks.COMPUTER_TOWER);
 
 	private static Properties newProperties() {
 		return new Properties();

@@ -1,7 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"the8086mc:metallurgical_silicon_block",
 		"the8086mc:computer_tower"
 	]
 }
