@@ -1,4 +1,4 @@
-package ru.gikexe.the8086mc.Item;
+package ru.gikexe.the8086mc.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -12,9 +12,6 @@ public class MetalShearsItem extends Item{
 	public ItemStack getRecipeRemainder(ItemStack stack) {
 		ItemStack damagedStack = stack.copy();
 		damagedStack.setDamageValue(damagedStack.getDamageValue() + 1);
-		if (damagedStack.getDamageValue() >= damagedStack.getMaxDamage()) {
-			return ItemStack.EMPTY;
-		}
-		return damagedStack;
+		return (damagedStack.getDamageValue() >= damagedStack.getMaxDamage() ? ItemStack.EMPTY : damagedStack);
 	}
 }

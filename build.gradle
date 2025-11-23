@@ -43,7 +43,6 @@ loom {
 	mods {
 		"the8086mc" {
 			sourceSet sourceSets.main
-			sourceSet sourceSets.client
 		}
 	}
 }

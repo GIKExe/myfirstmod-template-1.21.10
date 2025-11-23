@@ -1,4 +1,4 @@
-package ru.gikexe.the8086mc.Item;
+package ru.gikexe.the8086mc.item;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

@@ -8,7 +8,7 @@ public abstract class Ram {
 	protected int mask;
 	protected byte[] mem;
 
-    public byte getValue(int addr) {
+  public byte getValue(int addr) {
 		return mem[addr & mask];
 	}
 	public void setValue(int addr, byte value) {

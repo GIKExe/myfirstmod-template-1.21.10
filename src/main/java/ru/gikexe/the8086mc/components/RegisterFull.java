@@ -8,9 +8,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class RegisterFull implements Register {
-    protected short value = 0;
+	protected short value = 0;
 
-    public RegisterFull(short val) {
-        value = val;
-    }
+	public RegisterFull(short value) {
+		this.value = value;
+	}
 }

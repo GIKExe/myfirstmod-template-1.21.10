@@ -15,7 +15,8 @@ public class RegisterHigh implements Register {
 	public short getValue() {
 		return (short) (parent.getValue() >>> 8);
 	}
+
 	public void setValue(short value) {
-		parent.setValue((short) (parent.getValue() & 0xFF + value));
+		parent.setValue((short) ((parent.getValue() & 0xFF) + (value << 8)));
 	}
 }

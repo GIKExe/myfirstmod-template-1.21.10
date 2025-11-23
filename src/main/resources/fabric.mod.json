@@ -18,18 +18,9 @@
 	"entrypoints": {
 		"main": [
 			"ru.gikexe.the8086mc.The8086mc"
-		],
-		"client": [
-			"ru.gikexe.the8086mc.The8086mcClient"
 		]
 	},
-	"mixins": [
-		"the8086mc.mixins.json",
-		{
-			"config": "the8086mc.client.mixins.json",
-			"environment": "client"
-		}
-	],
+	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.21.10",

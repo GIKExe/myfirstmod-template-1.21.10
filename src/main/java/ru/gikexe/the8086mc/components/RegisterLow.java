@@ -15,6 +15,7 @@ public class RegisterLow implements Register {
 	public short getValue() {
 		return (short) (parent.getValue() & 0xFF);
 	}
+
 	public void setValue(short value) {
 		parent.setValue((short) (parent.getValue() & 0xFF00 + value));
 	}
