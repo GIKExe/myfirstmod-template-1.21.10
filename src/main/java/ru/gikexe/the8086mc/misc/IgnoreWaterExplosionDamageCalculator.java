@@ -1,4 +1,4 @@
-package ru.gikexe.the8086mc;
+package ru.gikexe.the8086mc.misc;
 
 import java.util.Optional;
 

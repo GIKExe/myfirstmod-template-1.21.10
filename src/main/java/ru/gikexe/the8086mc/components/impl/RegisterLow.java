@@ -1,7 +1,8 @@
-package ru.gikexe.the8086mc.components;
+package ru.gikexe.the8086mc.components.impl;
 
 import lombok.Getter;
 import lombok.Setter;
+import ru.gikexe.the8086mc.components.Register;
 
 @Getter
 @Setter

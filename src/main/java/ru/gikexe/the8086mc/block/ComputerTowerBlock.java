@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import ru.gikexe.the8086mc.IgnoreWaterExplosionDamageCalculator;
+import ru.gikexe.the8086mc.misc.IgnoreWaterExplosionDamageCalculator;
 
 public class ComputerTowerBlock extends Block implements SimpleWaterloggedBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;

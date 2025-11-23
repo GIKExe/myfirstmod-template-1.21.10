@@ -1,5 +1,9 @@
 package ru.gikexe.the8086mc.components;
 
+import ru.gikexe.the8086mc.components.impl.RegisterFull;
+import ru.gikexe.the8086mc.components.impl.RegisterHigh;
+import ru.gikexe.the8086mc.components.impl.RegisterLow;
+
 public class Processor {
 	private Register ax, bx, cx, dx;
 	private Register al, bl, cl, dl;
